@@ -31,6 +31,8 @@ h1 {
 .header {
     grid-row: 1;
     grid-column: 2 / -1;
+    display: grid;
+    grid-template: 1fr 2fr / 3fr 1fr;
 }
 
 .sidebar {
