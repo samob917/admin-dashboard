@@ -19,13 +19,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-h1 {
-    color: blue;
-}
-
 .main {
     display: grid;
     grid-template: 1fr 5fr / 1fr 5fr;
+    height: 100vh;
 }
 
 .header {
@@ -36,5 +33,16 @@ h1 {
 }
 
 .sidebar {
-    grid-row: 1 / -1
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr 4fr;
+}
+
+.content {
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+}
+
+.main-content {
+    grid-row: 1 / -1;
 }
