@@ -22,3 +22,17 @@ time, mark, audio, video {
 h1 {
     color: blue;
 }
+
+.main {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 2 / -1;
+}
+
+.sidebar {
+    grid-row: 1 / -1
+}
