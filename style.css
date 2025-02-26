@@ -46,3 +46,9 @@ time, mark, audio, video {
 .main-content {
     grid-row: 1 / -1;
 }
+
+.cards {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    height: 100%;
+}
