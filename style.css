@@ -36,6 +36,8 @@ time, mark, audio, video {
     grid-row: 1 / -1;
     display: grid;
     grid-template-rows: 1fr 3fr 2fr 4fr;
+    background-color: rgb(48, 138, 255);
+    gap: 2rem;
 }
 
 .content {
@@ -56,4 +58,40 @@ time, mark, audio, video {
 .action-btns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+svg {
+    fill: white;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: center;
+    color: white;
+}
+
+.logo svg {
+    height: 3rem;
+    justify-self: center;
+}
+
+.user-btns,
+.support-btns {
+    display: grid;
+    grid-template-rows: repeat(6, 2rem);
+}
+
+.user-btn, 
+.support-btn {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: center;
+    color: white;
+}
+
+.user-btn svg,
+.support-btn svg {
+    height: 1.5rem;
+    justify-self: center;
 }
