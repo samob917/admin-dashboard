@@ -30,6 +30,7 @@ time, mark, audio, video {
     grid-column: 2 / -1;
     display: grid;
     grid-template: 1fr 2fr / 3fr 1fr;
+    padding: 1rem;
 }
 
 .sidebar {
@@ -58,6 +59,7 @@ time, mark, audio, video {
 .action-btns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 svg {
@@ -94,4 +96,51 @@ svg {
 .support-btn svg {
     height: 1.5rem;
     justify-self: center;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+}
+.search svg {
+    height: 1.5rem;
+    fill: black;
+}
+
+input {
+    width: 75%;
+    background-color: rgb(214, 214, 214);
+    height: 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.notification {
+    display: grid;
+    grid-template-columns: 2rem 1fr 3fr;
+}
+
+.notification svg {
+    height: 1.5rem;
+    fill: black;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 1rem 3rem;
+}
+
+.greeting img {
+    grid-row: 1 / -1;
+}
+
+.action-btn {
+    background-color: rgb(48, 138, 255);
+    height: 2rem;
+    border-radius: 2rem;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    color: white;
 }
